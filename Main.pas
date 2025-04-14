@@ -17,6 +17,7 @@ type
     lbledtSeconds: TLabeledEdit;
     tmrMain: TTimer;
     procedure FormCreate(Sender: TObject);
+    procedure btnStartClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -29,6 +30,16 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TfrmMain.btnStartClick(Sender: TObject);
+var
+  iHours, iMinutes, iSeconds : Integer;
+begin
+   // Get user input
+  iHours := StrToInt(lbledtHours.Text);
+  iMinutes := StrToInt(lbledtMinutes.Text);
+  iSeconds := StrToInt(lbledtSeconds.Text);
+end;
 
 procedure TfrmMain.FormCreate(Sender: TObject);
 begin

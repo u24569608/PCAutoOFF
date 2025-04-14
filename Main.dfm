@@ -42,6 +42,7 @@ object frmMain: TfrmMain
       Anchors = [akTop]
       Caption = 'Start'
       TabOrder = 0
+      OnClick = btnStartClick
     end
   end
   object lbledtHours: TLabeledEdit
