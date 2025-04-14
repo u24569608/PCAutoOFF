@@ -1,0 +1,46 @@
+object frmMain: TfrmMain
+  Left = 0
+  Top = 0
+  BorderStyle = bsSingle
+  Caption = 'PCAutoOFF'
+  ClientHeight = 167
+  ClientWidth = 509
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 15
+  object sbarMain: TStatusBar
+    Left = 0
+    Top = 148
+    Width = 509
+    Height = 19
+    Panels = <>
+    ExplicitLeft = 264
+    ExplicitTop = 88
+    ExplicitWidth = 0
+  end
+  object pnlBase: TPanel
+    Left = 0
+    Top = 104
+    Width = 509
+    Height = 44
+    Align = alBottom
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    TabOrder = 1
+    DesignSize = (
+      509
+      44)
+    object btnSchedule: TButton
+      Left = 418
+      Top = 8
+      Width = 75
+      Height = 25
+      Anchors = [akTop]
+      Caption = 'Schedule'
+      TabOrder = 0
+    end
+  end
+end
